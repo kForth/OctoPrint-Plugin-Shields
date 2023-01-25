@@ -1,0 +1,26 @@
+title: OctoPrint Plugin Shields
+author: Kestin Goforth
+email: kgoforth1503@gmail.com
+keywords: TODO
+description: >-
+  TODO
+baseurl: "/"
+url: https://kforth.github.io/OctoPrint-Plugin-Shields
+author_link: https://github.com/kForth
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - LICENSE
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

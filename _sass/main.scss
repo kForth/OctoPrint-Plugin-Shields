@@ -1,0 +1,15 @@
+body {
+    height: 100vh;
+}
+
+main {
+    padding: 60px 15px 0;
+}
+
+.shields {
+    &-group {
+        span {
+            display: inline-block;
+        }
+    }
+}

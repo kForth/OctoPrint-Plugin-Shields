@@ -1,0 +1,57 @@
+---
+layout: default
+scripts:
+ - /assets/js/main.js
+---
+
+<div class="container d-flex flex-column align-items-center">
+    <form class="my-3" onsubmit="javascript:void(0);">
+        <div class="control-group">
+            <label class="form-label" for="pluginSelect">Plugin</label>
+            <select class="form-select" id="pluginSelect">
+                <option value="" disabled selected>Loading...</option>
+            </select>
+        </div>
+    </form>
+    <div class="my-3 text-center shields">
+        <div>
+            <h4>General</h4>
+            <img id="plugin-title" src="https://img.shields.io/badge/OctoPrint--CreatbotUtil-white?logo=OctoPrint">
+            <img id="plugin-name" src="https://img.shields.io/badge/Creatbot_Util-white?logo=OctoPrint">
+            <img id="plugin-id" src="https://img.shields.io/badge/CreatbotUtil-white?logo=OctoPrint">
+        </div>
+        <div class="my-4 shields-group">
+            <h4>Active Instances</h4>
+            <span>
+                <img id="active-monthly" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Active%20Monthly&query=%24[%3F(%40.id%3D%3D%22CreatbotUtil%22)].stats.instances_month&url=https%3A%2F%2Fplugins.octoprint.org%2Fplugins.json&logo=OctoPrint&labelColor=white&style=flat">
+                <img id="active-weekly" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Active%20Weekly&query=%24[%3F(%40.id%3D%3D%22CreatbotUtil%22)].stats.instances_week&url=https%3A%2F%2Fplugins.octoprint.org%2Fplugins.json&logo=OctoPrint&labelColor=white&style=flat">
+            </span>
+            <span>
+                <img id="new-monthly" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=New%20Monthly&query=%24[%3F(%40.id%3D%3D%22CreatbotUtil%22)].stats.install_events_month&url=https%3A%2F%2Fplugins.octoprint.org%2Fplugins.json&logo=OctoPrint&labelColor=white&style=flat">
+                <img id="new-weekly" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=New%20Weekly&query=%24[%3F(%40.id%3D%3D%22CreatbotUtil%22)].stats.install_events_week&url=https%3A%2F%2Fplugins.octoprint.org%2Fplugins.json&logo=OctoPrint&labelColor=white&style=flat">
+            </span>
+        </div>
+        <div class="my-4 shields-group">
+            <h4>Releases</h4>
+            <img id="releases" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Releases&query=%24%5B%3F%28%40.id%3D%3D%22CreatbotUtil%22%29%5D.github.releases&url=https%3A%2F%2Fplugins.octoprint.org%2Fplugins.json&logo=OctoPrint&labelColor=white&style=flat">
+            <img id="latest-release" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Latest%20Release&query=%24%5B%3F%28%40.id%3D%3D%22CreatbotUtil%22%29%5D.github.latest_release.tag&url=https%3A%2F%2Fplugins.octoprint.org%2Fplugins.json&logo=OctoPrint&labelColor=white&style=flat">
+        </div>
+        <div class="my-4 shields-group">
+            <h4>GitHub</h4>
+            <span>
+                <img id="gh-forks" src="https://img.shields.io/github/forks/kforth/OctoPrint-CreatbotUtil?label=Forks&logo=GitHub&logoColor=black&labelColor=white&color=blue">
+                <img id="gh-stars" src="https://img.shields.io/github/stars/kforth/OctoPrint-CreatbotUtil?label=Stars&logo=GitHub&logoColor=black&labelColor=white&color=blue">
+                <img id="gh-watchers" src="https://img.shields.io/github/watchers/kforth/OctoPrint-CreatbotUtil?label=Watchers&logo=GitHub&logoColor=black&labelColor=white&color=blue">
+            </span>
+            <span>
+                <img alt="GitHub" id="gh-license" src="https://img.shields.io/github/license/kforth/OctoPrint-CreatbotUtil?labelColor=white&color=blue">     
+            </span>
+        </div>
+        <div class="mt-5 mb-2">
+            <p>Check out this plugin on <a id="pluginsLink" href="https://plugins.octoprint.org/plugins/CreatbotUtil" target="_blank">plugins.octoprint.org</a>!</p>
+            <p>Fork this plugin on <a id="githubLink" href="https://github.com/kForth/CreatbotUtil" target="_blank">GitHub</a>!</p>
+            <p>See more shields at <a href="https://shields.io" target="_blank">shields.io</a>!</p>
+        </div>
+
+    </div>
+</div>
